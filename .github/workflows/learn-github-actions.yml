@@ -11,3 +11,8 @@ jobs:
           node-version: '20'
       - run: npm install -g bats
       - run: bats -v
+      - env:
+          password: ${{secrets.repo_password}}
+        run: |
+          echo password:
+          echo "$env:password"
