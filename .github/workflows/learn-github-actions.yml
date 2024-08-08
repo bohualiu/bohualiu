@@ -16,4 +16,4 @@ jobs:
           password: ${{ secrets.REPO_PASSWORD }}
         run: |
           echo "password is: "
-          echo "$env:password"
+          echo $password
