@@ -17,3 +17,4 @@ jobs:
         run: |
           echo "password is: "
           echo $password
+          echo "repo user: ${{ vars.REPO_USER }}"
